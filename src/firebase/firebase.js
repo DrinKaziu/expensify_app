@@ -11,7 +11,6 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
 
-firebase.database().ref().set({
-  name: 'Nacho Dog'
-})
+export { firebase, database as default};
